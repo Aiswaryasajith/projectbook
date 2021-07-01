@@ -18,6 +18,8 @@ use App\Http\Controllers\controllertrack;
 use App\Http\Controllers\controllerwelcome;
 use App\Http\Controllers\productcontroller;
 use App\Http\Controllers\controllerpayment;
+use App\Http\Controllers\controlleradminlogin;
+use App\Http\Controllers\comntrollerproduct1;
 
 
 
@@ -50,6 +52,7 @@ Route::get("/contact",[controllercontact::class,'create']);
 Route::get("/customerview",[controllercustomerview::class,'create']);
 Route::get("/home",[controllerhome::class,'create']);
 Route::get("/itemdetails",[controlleritem::class,'create']);
+Route::get("/product1",[comntrollerproduct1::class,'create']);
 Route::get("/login",[controllerlogin::class,'create']);
 Route::get("/order",[controllerorder::class,'create']);
 Route::get("/registration",[controllerregistration::class,'create']);
@@ -58,10 +61,12 @@ Route::get("/subcategorydetails",[controllersubcategory::class,'create']);
 Route::get("/track",[controllertrack::class,'create']);
 Route::get("/",[controllerwelcome::class,'create']);
 Route::get("/payment",[controllerpayment::class,'create']);
+Route::get("/admin1",[controlleradminlogin::class,'create']);
 
 
 Route::post("/aboutread",[controllerabout::class,'store']);
 Route::post("/adminread",[controlleradmin::class,'store']);
+Route::post("/admin1read",[controlleradminlogin::class,'store']);
 
 Route::post("/categoryread",[controllercategory::class,'store']);
 
@@ -86,6 +91,14 @@ Route::get("/customerview",[controllerregistration::class,'index']);
 
 Route::post("/categoryeditprocess/{id}",[controllercategory::class,'update']);
 Route::get("/category/{id}/edit",[controllercategory::class,'edit']);
+
+Route::post("/subcategoryeditprocess/{id}",[controllersubcategory::class,'update']);
+Route::get("/subcategory/{id}/edit",[controllersubcategory::class,'edit']);
+
+Route::post("/itemeditprocess/{id}",[controlleritem::class,'update']);
+Route::get("/item/{id}/edit",[controlleritem::class,'edit']);
+
+
 
 
 

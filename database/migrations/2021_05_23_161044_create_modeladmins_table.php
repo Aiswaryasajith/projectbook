@@ -15,6 +15,7 @@ class CreateModeladminsTable extends Migration
     {
         Schema::create('modeladmins', function (Blueprint $table) {
             $table->id();
+           
             $table->timestamps();
         });
     }

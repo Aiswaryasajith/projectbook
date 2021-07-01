@@ -21,12 +21,21 @@
     <p class="card-text">If you have an account with us, Please LOGIN</p>
   </div>
 </div>
+@if($errors->any())
+<div>
+<ul>
+@foreach($errors->all() as $err)
+<li>{{$err}}</li>
+@endforeach
+</ul>
+</div>
+@endif
 <form action="/loginread" method="post" >
 {{ csrf_field() }}
 <table class="table">
 <tr>
     <td>EMAIL</td>
-    <td><input name="lemail" type="text" class="form-control" placeholder="name@gmail.com"></td>
+    <td><input name="lemail" type="text" class="form-control" placeholder="name@gmail.com" required></td>
 </tr>
 
 <tr>
@@ -35,13 +44,21 @@
 </tr>
 <tr>
     <td>CONFIRM PASSWORD</td>
-    <td><input type="password" name="lcpassword" type="text" class="form-control" placeholder="Confirm Password"></td>
+    <td><input type="password" name="lcpassword" type="text" class="form-control" placeholder="Confirm Password" required></td>
 </tr>
 
 <tr>
     <td><button class="btn btn-secondary">SUBMIT</button></td>
 </tr>
+
 </table>
+<tr>
+<a>Admin login</a>
+<a href="/admin1" class="btn btn-link">Admin</a>
+</tr>     
+
+
+
 </form>
 </div> 
 

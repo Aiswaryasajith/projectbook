@@ -69,7 +69,8 @@ class controllersubcategory extends Controller
      */
     public function edit($id)
     {
-        //
+        $subcategory=modelsubcategory::find($id);
+        return view('subcategoryeditview',compact('subcategory'));
     }
 
     /**
@@ -81,7 +82,18 @@ class controllersubcategory extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $subcategory=modelsubcategory::find($id);
+
+        $getSubCategory=request('categoryname');
+        $getSubCategory=request('subcategory');
+
+
+        $subcategory->categoryname=$getSubCategory;
+        $subcategory->subcategory=$getSubCategory;
+       
+        $subcategory->save();
+
+        return view('admin');
     }
 
     /**

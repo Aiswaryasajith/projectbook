@@ -8,59 +8,53 @@
     <title>Document</title>
 </head>
 <body>
-<div class="row" style="position:relative;width:600px;left:450px;top:150px;">
-    <div class="container">
-      <form action="" method="post">
-      
-        <div class="row">
-          
+<div class="container">
+<div class="col col-12 col-sm-4 col-md-4 col-lg-6 col-xl-4 col-xxl-4"></div>
+<div class="col col-12 col-sm-4 col-md-4 col-lg-6 col-xl-4 col-xxl-4">
+<table class="table">
+<h3>Payment</h3>
+<label for="fname">Accepted Cards</label>
+<tr>
+    <td>Name on Card</td>
+</tr>
+<tr>    
+    <td><input type="text" id="cname" name="cardname" placeholder="John More Doe" required></td>
+</tr>
 
-          <div class="col-5">
-            <h3>Payment</h3>
-            <label for="fname">Accepted Cards</label>
-            <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
-            </div>
-            <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
-            <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
-            <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
-            <div class="row">
-              <div class="col-5">
-                <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018" required>
-              </div>
-              <div class="col-5">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352" required>
-              </div>
-            </div>
-          </div>
-          </div>
-       
-        <input type="submit" value="Continue to checkout" class="btn">
-      </form>
-    </div>
-  </div>
-  
+<tr>
+    <td>Credit card number</td>
+</tr>
+<tr>
+    <td><input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required></td>
+</tr>
+<tr>
+    <td>Exp Month</td>
+</tr>
+<tr>   
+    <td><input type="text" id="expmonth" name="expmonth" placeholder="September" required></td>
+</tr>
+<tr>
+    <td>CVV</td>
+</tr>
+<tr>   
+    <td><input type="text" id="cvv" name="cvv" placeholder="352" required></td>
+</tr>
+
+<tr>
+    <td><button type="submit" value="Continue to checkout" class="btn btn-secondary">SUBMIT</button></td>
+</tr>
+
+</table>
+</div>
+<div class="col col-12 col-sm-4 col-md-4 col-lg-6 col-xl-4 col-xxl-4">
+
+   
+</div>
 </div>
 
 </body>
 </html>
-<?php
-if(isset($_POST['cardname'])){
-    $a=$_POST['cardname'];
-	msgbox("success....");
-    nextpage('my_order.php');
-    
-}
 
-?>
 
     
 

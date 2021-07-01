@@ -36,20 +36,22 @@
 </div>
 <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
 
-<form action="/adminlogin" method="post" role="form" class="php-email-form">
-  <div class="row">
-    
-    <div>
-      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-    </div>
-  </div>
-  <div class="form-group mt-3">
-    <input type="text" class="form-control" name="password" id="password" placeholder="password" required>
-  </div>
-  <div class="my-3">
-    <div class="error-message"></div>
-     </div>
-  <div class="text-center" href="/home"><button type="submit" href="/home">SUBMIT</button></div>
+<form action="/admin1read" method="post" >
+{{ csrf_field() }}
+<table class="table">
+<tr>
+    <td>EMAIL</td>
+    <td><input name="lemail" type="text" class="form-control" placeholder="name@gmail.com" required></td>
+</tr>
+
+<tr>
+    <td>PASSWORD</td>
+    <td><input type="password" name="lpassword" type="text" class="form-control" placeholder="Password" requied></td>
+</tr>
+     <tr>
+    <td><button class="btn btn-secondary">SUBMIT</button></td>
+</tr>
+</table>
 </form>
 </div>
 <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">

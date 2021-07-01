@@ -26,6 +26,7 @@ class controlleritem extends Controller
     public function create()
     {
         return view('itemdetails');
+    
     }
 
     /**
@@ -81,7 +82,8 @@ class controlleritem extends Controller
      */
     public function edit($id)
     {
-        //
+        $item=modelitem::find($id);
+        return view('itemeditview',compact('item'));
     }
 
     /**
@@ -93,7 +95,30 @@ class controlleritem extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $item=modelitem::find($id);
+
+        $getItem=request('categoryname');
+        $getItem=request('subcategory');
+        $getItem=request('item');
+        $getItem=request('autor');
+        $getItem=request('description');
+        $getItem=request('rate');
+        $getItem=request('quality');
+        $getItem=request('image');
+
+
+        $item->categoryname=$getItem;
+        $item->subcategory=$getItem;
+        $item->item=$getItem;
+        $item->autor=$getItem;
+        $item->description=$getItem;
+        $item->rate=$getItem;
+        $item->quality=$getItem;
+        $item->image=$getItem;
+       
+        $item->save();
+
+        return view('admin');
     }
 
     /**

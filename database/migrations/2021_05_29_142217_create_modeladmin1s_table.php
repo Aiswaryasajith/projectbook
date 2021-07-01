@@ -15,6 +15,8 @@ class CreateModeladmin1sTable extends Migration
     {
         Schema::create('modeladmin1s', function (Blueprint $table) {
             $table->id();
+            $table->string("lemail")->admin();
+            $table->string("lpassword")->admin();
             $table->timestamps();
         });
     }

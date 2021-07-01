@@ -37,23 +37,12 @@
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">COMBO OFFER</a>
+          <a class="nav-link active" aria-current="page" href="/product1">BOOKS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">TrackYourOrder</a>
+          <a class="nav-link" href="/tack">TrackYourOrder</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          SelectLanguage
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" href="#"></a>English</li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#"></a>Malayalam</li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#"></a>Hindi</li>
-          </ul>
-        </li>
+       
         <li class="nav-item">
           <a class="nav-link" href="/contact">Contact</a>
         </li>

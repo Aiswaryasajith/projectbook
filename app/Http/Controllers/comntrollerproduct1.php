@@ -3,28 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\modellogin;
 
-class controllerlogin extends Controller
+class comntrollerproduct1 extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    
-    function login(Request $request)
-    {
-        //
-
-    }
     public function index()
     {
-        $req->validation([
-            'lemail'=>'required | email',
-            'lpassword'=>'required | min:5',
-            'lcpassword'=>'required | lpassword',
-        ]);
+       
     }
 
     /**
@@ -34,9 +23,9 @@ class controllerlogin extends Controller
      */
     public function create()
     {
-        return view('login');
+        return view('product1');
+        
     }
-
 
     /**
      * Store a newly created resource in storage.
@@ -46,23 +35,7 @@ class controllerlogin extends Controller
      */
     public function store(Request $request)
     {
-        $getEmail=request('lemail');
-        $getPassword=request('lpassword');
-        $getCpassword=request('lcpassword');
-
        
-
-        $login=new modellogin();
-        $login->lemail=$getEmail;
-        $login->lpassword=$getPassword;
-        $login->lcpassword=$getCpassword;
-       
-        $login->save();
-        
-        
-        return view('home'); 
-       
-        
     }
 
     /**
@@ -108,6 +81,5 @@ class controllerlogin extends Controller
     public function destroy($id)
     {
         //
-    } 
-    
+    }
 }

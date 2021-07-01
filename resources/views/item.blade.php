@@ -39,6 +39,7 @@
             <td>{{ $item->rate }} </td>
             <td>{{ $item->Quality }} </td>
             <td>{{ $item->image }} </td>
+            <td><a class="btn btn-warning" href="/item/{{$item->id}}/edit">EDIT</a></td>
             
         </tr>
         @endforeach

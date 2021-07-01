@@ -92,8 +92,8 @@
       <h5 class="card-title">The Secret of the Nagas</h5>
       <p class="card-text">Rs.334</p>
       <p class="card-text"><small class="text-muted">By: Amish Tripathi (Author) | Publisher: Westland Publication Limited | Released: 23 May 2011 | Publisher Imprint: Westland Publication Limited</small></p>
-      
-      <a href="/payment" class="btn btn-primary">BUY</a>
+      <a href="#" class="card-link">Go Link</a>
+      <a href="#" class="btn btn-primary">Add To Cart</a>
     </div>
   </div>
   <div class="card">
@@ -102,8 +102,8 @@
       <h5 class="card-title">Wings of Fire</h5>
       <p class="card-text">Rs.276</p>
       <p class="card-text"><small class="text-muted">By: Au (Author) , Apj Abdul Kalam (Author) , Arun Tiwari (Author) | Publisher: Sangam Books Ltd | Released: 11 Jan 1999</small></p>
-     
-      <a href="/payment" class="btn btn-primary">BUY</a>
+      <a href="#" class="card-link">Go Link</a>
+      <a href="#" class="btn btn-primary">Add To Cart</a>
     </div>
   </div>
   <div class="card">
@@ -112,8 +112,8 @@
       <h5 class="card-title">India 2020</h5>
       <p class="card-text">Rs.299</p>
       <p class="card-text"><small class="text-muted">By: A.P.J. Abdul Kalam (Author) , A. P. J. Abdul Kalam (Author) , A P J Kalam (Author) | Publisher: Penguin Books India Pvt Ltd | Released: 15 Apr 2020</small></p>
-      
-      <a href="/payment" class="btn btn-primary">BUY</a>
+      <a href="#" class="card-link">Go Link</a>
+      <a href="#" class="btn btn-primary">Add To Cart</a>
     </div>
   </div>
 </div>
@@ -121,6 +121,8 @@
 </div>
 
 </div>
+
+@yield("content")
 </div>
     
 

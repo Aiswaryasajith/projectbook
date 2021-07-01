@@ -13,7 +13,12 @@ class controllerpayment extends Controller
      */
     public function index()
     {
-        //
+        $req->validation([
+            'cardname'=>'required',
+            'cardname'=>'required',
+            'expmonth'=>'required',
+            'cvv'=>'required',
+        ]);
     }
 
     /**
